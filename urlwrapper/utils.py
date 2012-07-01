@@ -112,7 +112,7 @@ class Parser:
     # User defined formatters --------------------------------------------------
     def format_url(self, url, text):
         '''Return formatted HTML for a url.'''
-        return '<a href="%s">%s</a>' % (escape(url), text)
+        return '<a href="%s" class="wrapped_url">%s</a>' % (escape(url), text)
 
 # Simple URL escaper
 def escape(text):
